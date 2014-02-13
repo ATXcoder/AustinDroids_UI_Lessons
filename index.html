@@ -1,9 +1,133 @@
 <!DOCTYPE html>
 <head>
-	<title>AustinDroid Learning Series - Android UI</title>
+	<title>Austin-Android-Developers Lessons - Android UI</title>
+	<!--Scripts-->
+	<script src="scripts/jquery-1.9.1.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+
+	<!--CSS-->
+	<link rel="stylesheet" href="content/CSS/bootstrap.min.css"/>
+	<link rel="stylesheet" href="content/CSS/bootstrap-theme.min.css"/>
+
+	<!--Mobile Viewport so that it will scale when viewed on mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="content/CSS/carousel.css" rel="stylesheet">
+
 </head>
 <html lang="en">
 	<body>
-		<h1>AustinDroid Learning Series - Android UI</h1>
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+				<span class="navbar-brand">Austin Droids Lessons</span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">Overview</a>
+					</li>
+					<li>
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Lessons<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="lesson.html?lesson1">01 - Introduction &amp; Overview</a>
+								<a href="lesson.html?lesson2">02 - Look &amp; Feel: Mockups and Application Flow</a>
+								<a href="lesson.html?lesson3">03 - One App to Rule Them All: Fragments</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Downloads</a>
+					</li>
+					<li>
+						<a href="#">Help</a>
+					</li>
+					<li>
+						<a href="http://www.meetup.com/Austin-Android-Developers/">Austin-Android-Developers</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	
+		 <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!--First Slide-->
+        <div class="item active">
+         <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:First slide" alt="first slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Austin-Android-Developers Lessons<br/>User Interface (UI)</h1>
+              <p>Learn about the different parts of the Android UI such as Fragments and the ActionBar while building a fun weather
+              	app for Android.</p>
+              	<p><a class="btn btn-lg btn-primary" href="lessons.html" role="button">Lessons</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!--Second Slide-->
+        <div class="item">
+          <img src="content/images/CloudDownload.png"alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Downloads</h1>
+              <p>Everything you need for the past and current lessons can be found here</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Downloads</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!--Third Slide-->
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Help</h1>
+              <p>Need some help with the current lesson? Want to discuss the lesson with other members? Just click 
+              	the button below to go to the Austin-Android-Developer's Message Boards.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Message Boards</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!--Fourth Slide-->
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:AustinDroids" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Austin-Android-Developers Membership</h1>
+              <p>AustinDroids is an active Meetup group of Android developers of all ages and skill levels in the Austin, Tx and
+              	sourrounding areas. Come by and check out our Meetup.com site, sign-up to be a free member, and 
+              	come check-out one of our Meetups.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Austin-Android-Developers Meetup Site</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 	</body>
 </html>
